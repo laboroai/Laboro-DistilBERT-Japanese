@@ -145,10 +145,11 @@ For QA task, we used [Driving Domain QA dataset](http://nlp.ist.i.kyoto-u.ac.jp/
 #### Requirements
 
 * Python 3.6
-* Transformers==3.1.0
+* Transformers==3.4.0
 * torch==1.7.0
 * sentencepiece>=0.1.85
 * GPU is recommended
+* (for Bandai Namco model) mecab-python3 with MeCab and its dictionary mecab-ipadic-2.7.0-20070801 installed
 
 <a name="code2"></a>
 
