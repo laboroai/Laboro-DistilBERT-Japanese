@@ -1,0 +1,14 @@
+.DS_Store
+.vscode
+**/.ipynb_checkpoints
+**/__pycache__
+src/**_distilbert_colab
+
+data/livedoor/**
+data/ddqa/RC-QA/**
+
+model/**_distilbert/**
+
+!.gitkeep
+!model/namco_distilbert/config_livedoor.json
+!model/namco_distilbert/config_ddqa.json
