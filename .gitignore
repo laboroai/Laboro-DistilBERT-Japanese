@@ -10,5 +10,8 @@ data/ddqa/RC-QA/**
 model/**_distilbert/**
 
 !.gitkeep
+!data/livedoor/**_indexed.tsv
+!data/livedoor/create_corpus_from_index.py
+!data/livedoor/README.md
 !model/namco_distilbert/config_livedoor.json
 !model/namco_distilbert/config_ddqa.json
