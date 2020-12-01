@@ -159,7 +159,7 @@ Download DDQA dataset following the instruction [here](http://nlp.ist.i.kyoto-u.
 
 Since we only use the data in ```RC-QA``` dataset, please copy the dataset into ```./data/ddqa/RC-QA/``` directory.
 
-#### STEP 1 Pre-Tokenize Data
+#### STEP 2 Pre-Tokenize Data
 
 1. Our DistilBERT
 
@@ -171,7 +171,7 @@ Since we only use the data in ```RC-QA``` dataset, please copy the dataset into 
 
    To pre-tokenize DDQA dataset, use ```./src/data_prep/mecab_wordpiece_tokenize_ddqa.ipynb```. 
 
-#### STEP 2 Fine-Tune
+#### STEP 3 Fine-Tune
 
 1. Our DistilBERT
 
