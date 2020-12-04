@@ -62,6 +62,24 @@ Please cite this repository:
    For commercial use, please [contact Laboro.AI Inc.](https://laboro.ai/contact/other/)
 
 
+## To Use Our Model via Huggingface Model Hub
+
+1. To load the DistilBERT model, run
+
+```
+from transformers import DistilBertModel
+pt_model = DistilBertModel.from_pretrained('laboro-ai/distilbert-base-japanese')
+```
+
+2. To load the SentencePiece tokenizer, run
+
+```
+from transformers import AlbertTokenizer
+sp_tokenizer = AlbertTokenizer.from_pretrained('laboro-ai/distilbert-base-japanese')
+```
+
+\* Note that the model on Huggingface Model Hub is also released under CC-BY-NC-4.0 license.
+
 ## Fine-Tuning DistilBERT Models
 
 To fine-tune our DistilBERT model, download the model and tokenizer from [here](model-link-未定), and then put everything in ```./model/laboro_distilbert/``` directory.
