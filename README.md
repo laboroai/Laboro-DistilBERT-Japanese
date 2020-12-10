@@ -64,10 +64,12 @@ Please cite this repository:
 
 ## To Use Our Model via Huggingface Model Hub
 
-1. To load the DistilBERT model, run
+1. To load the pre-trained DistilBERT model, run
 
 ```
 from transformers import DistilBertModel
+# DistilBertModel can be replaced by AutoModel
+
 pt_model = DistilBertModel.from_pretrained('laboro-ai/distilbert-base-japanese')
 ```
 
@@ -75,8 +77,27 @@ pt_model = DistilBertModel.from_pretrained('laboro-ai/distilbert-base-japanese')
 
 ```
 from transformers import AlbertTokenizer
+# AlbertTokenizer can't be replaced by AutoTokenizer
+
 sp_tokenizer = AlbertTokenizer.from_pretrained('laboro-ai/distilbert-base-japanese')
 ```
+
+3. To load the DistilBERT model fine-tuned on Livedoor News corpus, run
+
+```
+from transformers import DistilBertForSequenceClassification
+
+model = DistilBertForSequenceClassification.from_pretrained('laboro-ai/distilbert-base-japanese-finetuned-livedoor')
+```
+
+4. To load the DistilBERT model fine-tuned on DDQA corpus, run
+
+```
+from transformers import DistilBertForQuestionAnswering
+
+model = DistilBertForQuestionAnswering.from_pretrained('laboro-ai/distilbert-base-japanese-finetuned-ddqa')
+```
+
 
 \* Note that the model on Huggingface Model Hub is also released under CC-BY-NC-4.0 license.
 
