@@ -8,7 +8,7 @@ Several months ago, we released our BERT model pre-trained with our own web corp
 
 Although it is possible to distill from the BERT model we released, we chose to pre-train a new BERT base model and use the new model as the teacher model to train our DistilBERT mdoel. The main difference between the released BERT and the new BERT model is the corpus they are pre-trained on. Hoping to improve the performance, this time we used a Japanese corpus extracted from Common Crawl (CC) data by using [Extractor](https://github.com/paracrawl/extractor), and then cleaned the data in the same fashion Google prepared the [C4](https://github.com/google-research/text-to-text-transfer-transformer#c4) corpus.
 
-Download the base DistilBERT model from [here](model-link-未定).
+Download the base DistilBERT model from [here](http://assets.laboro.ai.s3.amazonaws.com/laborobert/laboro_distilbert.tar).
 
 ### How well is the performance
 
@@ -51,7 +51,7 @@ Please cite this repository:
   title = {Laboro DistilBERT Japanese},
   author = {"Zhao, Xinyi and Hamamoto, Masafumi and Fujihara, Hiromasa"},
   year = {2020},
-  howpublished = {\url{github-link-未定}}
+  howpublished = {\url{https://github.com/laboroai/Laboro-DistilBERT-Japanese}}
 }
 ```
 
@@ -103,7 +103,7 @@ model = DistilBertForQuestionAnswering.from_pretrained('laboro-ai/distilbert-bas
 
 ## Fine-Tuning DistilBERT Models
 
-To fine-tune our DistilBERT model, download the model and tokenizer from [here](model-link-未定), and then put everything in ```./model/laboro_distilbert/``` directory.
+To fine-tune our DistilBERT model, download the model and tokenizer from [here](http://assets.laboro.ai.s3.amazonaws.com/laborobert/laboro_distilbert.tar), and then put everything in ```./model/laboro_distilbert/``` directory.
 
 Similarly, to fine-tune the model trained by Bandai Namco, follow their instruction [here](https://github.com/BandaiNamcoResearchInc/DistilBERT-base-jp) to download the model and vocab file, and then put everything in ```./model/namco_distilbert/``` directory.
 
