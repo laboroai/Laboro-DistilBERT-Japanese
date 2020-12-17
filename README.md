@@ -1,5 +1,20 @@
 # Laboro DistilBERT Japanese
 
+<!-- TOC -->
+
+- [Introduction](#introduction)
+    - [About Our DistilBERT Model](#about-our-distilbert-model)
+    - [How well is the performance](#how-well-is-the-performance)
+    - [How fast is the inference](#how-fast-is-the-inference)
+    - [To cite this work](#to-cite-this-work)
+    - [License](#license)
+- [To Use Our Model via Huggingface Model Hub](#to-use-our-model-via-huggingface-model-hub)
+- [Fine-Tuning DistilBERT Models](#fine-tuning-distilbert-models)
+    - [Classification](#classification)
+    - [Question Answering](#question-answering)
+
+<!-- /TOC -->
+
 ## Introduction
 
 ### About Our DistilBERT Model
@@ -120,8 +135,6 @@ The original corpus is not devided in training, evaluation, and testing data. In
 * shuffling randomly
 * deviding into train:dev:test = 2:2:6
 
-<a name="req1"></a>
-
 #### Requirements
 
 * Python 3.6
@@ -130,8 +143,6 @@ The original corpus is not devided in training, evaluation, and testing data. In
 * sentencepiece>=0.1.85
 * GPU is recommended
 * (for Bandai Namco model) mecab-python3 with MeCab and its dictionary mecab-ipadic-2.7.0-20070801 installed
-
-<a name="code1"></a>
 
 #### STEP 1 Download and Create Dataset
 
@@ -179,8 +190,6 @@ Question answering is another task to evaluate and apply language models. In Eng
 
 For QA task, we used [Driving Domain QA dataset](http://nlp.ist.i.kyoto-u.ac.jp/index.php?Driving%20domain%20QA%20datasets) for evaluation. This dataset consists of PAS-QA dataset and RC-QA dataset. So far, we have only evaluated our model on the RC-QA dataset. The dataset is already in the format of SQuAD 2.0, so no pre-processing is needed for further use.
 
-<a name="req2"></a>
-
 #### Requirements
 
 * Python 3.6
@@ -189,8 +198,6 @@ For QA task, we used [Driving Domain QA dataset](http://nlp.ist.i.kyoto-u.ac.jp/
 * sentencepiece>=0.1.85
 * GPU is recommended
 * (for Bandai Namco model) mecab-python3 with MeCab and its dictionary mecab-ipadic-2.7.0-20070801 installed
-
-<a name="code2"></a>
 
 #### STEP 1 Download and Create Dataset
 
